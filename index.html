@@ -6,18 +6,18 @@
 </head>
 <body>
     <section id="main">
-        <form method="post">
+        <form action="new-word" method="post">
             <label for="s1">Vehicle type:</label>
             <select name="vehicle" id="s1">
                 <option value="car">Car</option>
                 <option value="bus" selected>Bus</option>
             </select>
-            <input id="input-gua-word" type="text">
-            <input id="input-gua-transcription" type="text">
-            <input id="input-eng-translation" type="text">
+            <input id="input-gua-word" name="guaword" type="text">
+            <input id="input-gua-transcription" name="guatranscription" type="text">
+            <input id="input-eng-translation" name="engtranslation" type="text">
             <input id="input-submit-btn" type="submit" value="Отправить">
         </form>
     </section>
-    <script type="module" src="main.js" defer></script>
+<!--    <script type="module" src="main.js" defer></script>-->
 </body>
 </html>
