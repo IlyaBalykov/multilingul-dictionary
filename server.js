@@ -1,23 +1,20 @@
 
 const http = require("http");
 const fs = require("fs");
-const mysql = require('mysql2');
+// const mysql = require('mysql2');
 const handler = require('./requestHandler.js')
 
 http.createServer(async (request, response) =>{
+    //@mytodo refactor code for request with no
 
     if(request.url == "/new-word"){
-        let body = ""
+        let buffer = ""
         for await (const data of request){
-            body+=data
+            buffer+=data
         }
-        let guaWord = "Some data"
-        let guaTranscription = ""
-        let engTranslation = ""
 
-        const complexData = body.split('&')
         //MySQL connect
-        handler(guaWord)
+        handler(buffer)
         // const guatoValue = [`${guaWord}`, '-', '-', '-', '-', '-', '-', '-'];
         // const sqlQuery = `INSERT INTO guato_dictionary.TRANSLATION (GUA, RUS, ENG, POR, TRANSCRIPTION, IMG_SRC, AUDIO_SRC, COMMENT) VALUES (?,?,?,?,?,?,?,?)`;
         //
@@ -44,7 +41,7 @@ http.createServer(async (request, response) =>{
         //     }
         //     console.log('Connection closed.')
         // })
-        response.end('Data received',()=>console.log(body))
+        response.end('Data received',()=>console.log('Response end'))
     } else {
         fs.readFile('index.html', (error, data) => {
             if (error) {
