@@ -2,20 +2,28 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Drop-down menu</title>
+    <title>Guato dictionary</title>
 </head>
 <body>
     <section id="main">
         <form action="new-word" method="post">
-            <label for="s1">Vehicle type:</label>
-            <select name="vehicle" id="s1">
-                <option value="car">Car</option>
-                <option value="bus" selected>Bus</option>
-            </select>
-            <input id="input-gua-word" name="guaword" type="text">
-            <input id="input-gua-transcription" name="guatranscription" type="text">
-            <input id="input-eng-translation" name="engtranslation" type="text">
-            <input id="input-submit-btn" type="submit" value="Отправить">
+            <label for="input-gua-word">Word on Guato:</label>
+            <input id="input-gua-word" name="guaword" type="text"><br>
+            <label for="input-gua-transcription">Word transcription:</label>
+            <input id="input-gua-transcription" name="guatranscription" type="text"><br>
+            <label for="input-eng-translation">Word on ENG:</label>
+            <input id="input-eng-translation" name="engtranslation" type="text"><br>
+            <label for="input-por-translation">Word on POR:</label>
+            <input id="input-por-translation" name="portranslation" type="text"><br>
+            <label for="input-rus-translation">Word on RUS:</label>
+            <input id="input-rus-translation" name="rustranslation" type="text"><br>
+            <label for="add-image">Image:</label>
+            <input id="add-image" name="rustranslation" type="text"><br>
+            <label for="add-audio">Audio:</label>
+            <input id="add-audio" name="rustranslation" type="text"><br>
+            <label for="add-comment">Comment:</label>
+            <input id="add-comment" name="rustranslation" type="text"><br>
+            <input id="input-submit-btn" type="submit" value="Add to DB">
         </form>
     </section>
 <!--    <script type="module" src="main.js" defer></script>-->
