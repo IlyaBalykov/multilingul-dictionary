@@ -2,32 +2,42 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Guato dictionary</title>
     <link rel="stylesheet" href="./style.css">
+    <!--    <script type="module" src="main.js" defer></script>-->
+    <title>Guato dictionary</title>
 </head>
 <body>
-    <section id="main">
-        <h2>Adding new words to the dictionary</h2>
-        <form action="new-word" method="post">
-            <label for="input-gua-word">Word on Guato:</label>
-            <input id="input-gua-word" name="guaword" type="text"><br>
-            <label for="input-gua-transcription">Word transcription:</label>
-            <input id="input-gua-transcription" name="guatranscription" type="text"><br>
-            <label for="input-eng-translation">Word on ENG:</label>
-            <input id="input-eng-translation" name="engtranslation" type="text"><br>
-            <label for="input-por-translation">Word on POR:</label>
-            <input id="input-por-translation" name="portranslation" type="text"><br>
-            <label for="input-rus-translation">Word on RUS:</label>
-            <input id="input-rus-translation" name="rustranslation" type="text"><br>
-            <label for="add-word-image">Image:</label>
-            <input id="add-word-image" name="wordimage" type="text"><br>
-            <label for="add-word-audio">Audio:</label>
-            <input id="add-word-audio" name="wordaudio" type="text"><br>
-            <label for="add-comment">Comment:</label>
-            <input id="add-comment" name="comment" type="text"><br>
-            <input id="input-submit-btn" type="submit" value="Add to DB">
-        </form>
-    </section>
-<!--    <script type="module" src="main.js" defer></script>-->
+    <header class="header">
+        <nav class="header__nav-menu nav-menu">
+            <ul class="nav-menu__nav-list nav-list">
+                <li class="nav-list__item">Dictionary</li>
+                <li class="nav-list__item">Edit Dictionary</li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main">
+        <section id="main__add-word-section">
+            <h2>Adding new words to the dictionary</h2>
+            <form action="new-word" method="post">
+                <label for="input-gua-word">Word on Guato:</label>
+                <input id="input-gua-word" name="guaword" type="text"><br>
+                <label for="input-gua-transcription">Word transcription:</label>
+                <input id="input-gua-transcription" name="guatranscription" type="text"><br>
+                <label for="input-eng-translation">Word on ENG:</label>
+                <input id="input-eng-translation" name="engtranslation" type="text"><br>
+                <label for="input-por-translation">Word on POR:</label>
+                <input id="input-por-translation" name="portranslation" type="text"><br>
+                <label for="input-rus-translation">Word on RUS:</label>
+                <input id="input-rus-translation" name="rustranslation" type="text"><br>
+                <label for="add-word-image">Image:</label>
+                <input id="add-word-image" name="wordimage" type="text"><br>
+                <label for="add-word-audio">Audio:</label>
+                <input id="add-word-audio" name="wordaudio" type="text"><br>
+                <label for="add-comment">Comment:</label>
+                <input id="add-comment" name="comment" type="text"><br>
+                <input id="input-submit-btn" type="submit" value="Add to DB">
+            </form>
+        </section>
+    </main>
 </body>
 </html>

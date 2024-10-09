@@ -19,3 +19,12 @@ section {
     margin: 0;
     padding: 20px;
 }
+
+.nav-list {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 20px;
+    column-gap: 40px;
+    list-style: none;
+}
