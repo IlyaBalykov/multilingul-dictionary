@@ -7,7 +7,7 @@ const handler = require('./requestHandler.js')
 http.createServer(async (request, response) =>{
     //@mytodo refactor code for request with no
 
-    if(request.url == "/new-word"){
+    if(request.url === "/new-word"){
         let buffer = ""
         for await (const data of request){
             buffer+=data
