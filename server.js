@@ -1,7 +1,6 @@
 
 const http = require("http");
 const fs = require("fs");
-// const mysql = require('mysql2');
 const handler = require('./requestHandler.js')
 
 http.createServer(async (request, response) =>{

@@ -16,6 +16,28 @@
         </nav>
     </header>
     <main class="main">
+        <section id="main__ductionary-section">
+            <h2>Start typing a word</h2>
+            <form action="get-word" method="get">
+                <label for="translate-from-gua-word">Word on Guato:</label>
+                <input id="translate-from-gua-word" name="guaword" type="text"><br>
+                <label for="get-transcription">Word transcription:</label>
+                <input id="get-transcription" name="guatranscription" type="text"><br>
+                <label for="translate-from-eng-translation">Word on ENG:</label>
+                <input id="translate-from-eng-translation" name="engtranslation" type="text"><br>
+                <label for="translate-from-por-translation">Word on POR:</label>
+                <input id="translate-from-por-translation" name="portranslation" type="text"><br>
+                <label for="translate-from-rus-translation">Word on RUS:</label>
+                <input id="translate-from-translation" name="rustranslation" type="text"><br>
+                <label for="get-image">Image:</label>
+                <input id="get-image" name="wordimage" type="text"><br>
+                <label for="get-audio">Audio:</label>
+                <input id="get-audio" name="wordaudio" type="text"><br>
+                <label for="get-comment">Comment:</label>
+                <input id="get-comment" name="comment" type="text"><br>
+                <input id="input-get-btn" type="submit" value="Translate">
+            </form>
+        </section>
         <section id="main__add-word-section">
             <h2>Adding new words to the dictionary</h2>
             <form action="new-word" method="post">
