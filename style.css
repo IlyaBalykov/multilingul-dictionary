@@ -16,8 +16,15 @@ section {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
     margin: 0;
     padding: 20px;
+}
+
+.dictionary-section__get-form, .new-word-section__post-form {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
 }
 
 .nav-list {
