@@ -16,50 +16,51 @@
         </nav>
     </header>
     <main class="main">
-        <section id="main__dictionary-section" class="dictionary-section">
+        <section id="main__dictionary-section" class="dictionary-section section">
             <h2>Start typing a word</h2>
-            <form class="dictionary-section__get-form" action="get-word" method="get">
+            <form class="dictionary-section__get-form get-form" action="get-word" method="get">
                 <label for="translate-from-gua-word">Word on Guato:</label>
-                <input id="translate-from-gua-word" name="guaword" type="text">
+                <input id="translate-from-gua-word" class="input-field" name="guaword" type="text">
                 <label for="get-transcription">Word transcription:</label>
-                <input id="get-transcription" name="guatranscription" type="text">
+                <input id="get-transcription" class="input-field" name="guatranscription" type="text">
                 <label for="translate-from-eng-translation">Word on ENG:</label>
-                <input id="translate-from-eng-translation" name="engtranslation" type="text">
+                <input id="translate-from-eng-translation" class="input-field" name="engtranslation" type="text">
                 <label for="translate-from-por-translation">Word on POR:</label>
-                <input id="translate-from-por-translation" name="portranslation" type="text">
+                <input id="translate-from-por-translation" class="input-field" name="portranslation" type="text">
                 <label for="translate-from-rus-translation">Word on RUS:</label>
-                <input id="translate-from-rus-translation" name="rustranslation" type="text">
+                <input id="translate-from-rus-translation" class="input-field" name="rustranslation" type="text">
                 <div class="container-for-word-image container">
                     <img src="" alt="Word visualization">
                 </div>
                 <audio id="get-audio" controls src="" ></audio>
                 <label for="get-comment">Comment:</label>
-                <input id="get-comment" name="comment" type="text">
+                <input id="get-comment" class="get-form__comment input-field" name="comment" type="text" readonly>
                 <input id="input-get-btn" type="submit" value="Translate">
             </form>
         </section>
-        <section id="main__add-word-section" class="new-word-section">
+        <section id="main__add-word-section" class="new-word-section section">
             <h2>Adding new words to the dictionary</h2>
-            <form class="new-word-section__post-form" action="new-word" method="post">
+            <form class="new-word-section__post-form post-form" action="new-word" method="post">
                 <label for="input-gua-word">Word on Guato:</label>
-                <input id="input-gua-word" name="guaword" type="text">
+                <input id="input-gua-word" class="input-field" name="guaword" type="text">
                 <label for="input-gua-transcription">Word transcription:</label>
-                <input id="input-gua-transcription" name="guatranscription" type="text">
+                <input id="input-gua-transcription" class="input-field" name="guatranscription" type="text">
                 <label for="input-eng-translation">Word on ENG:</label>
-                <input id="input-eng-translation" name="engtranslation" type="text">
+                <input id="input-eng-translation" class="input-field" name="engtranslation" type="text">
                 <label for="input-por-translation">Word on POR:</label>
-                <input id="input-por-translation" name="portranslation" type="text">
+                <input id="input-por-translation" class="input-field" name="portranslation" type="text">
                 <label for="input-rus-translation">Word on RUS:</label>
-                <input id="input-rus-translation" name="rustranslation" type="text">
+                <input id="input-rus-translation" class="input-field" name="rustranslation" type="text">
                 <label for="add-word-image">Image:</label>
-                <input id="add-word-image" name="wordimage" type="text">
+                <input id="add-word-image" class="input-field" name="wordimage" type="text">
                 <label for="add-word-audio">Audio:</label>
-                <input id="add-word-audio" name="wordaudio" type="text">
+                <input id="add-word-audio" class="input-field" name="wordaudio" type="text">
                 <label for="add-comment">Comment:</label>
-                <input id="add-comment" name="comment" type="text">
+                <input id="add-comment" class="input-field" name="comment" type="text">
                 <input id="input-submit-btn" type="submit" value="Add to DB">
             </form>
         </section>
     </main>
+    <script src="main.js" defer></script>
 </body>
 </html>
